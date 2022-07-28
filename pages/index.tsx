@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import type { NextPage } from 'next'
-import { BaseLayout } from '../components'
+import { BaseLayout, NftList } from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
               Mint a NFT to get unlimited ownership forever!
             </p>
           </div>
-         
+         <NftList  />
         </div>
       </div>
     </BaseLayout>
