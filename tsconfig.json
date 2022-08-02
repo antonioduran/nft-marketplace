@@ -20,7 +20,9 @@
       "@ui/*": ["components/ui/*"],
       "@providers": ["components/providers"],
       "@providers/*": ["components/providers/*"],
-      "@_types/*": ["types/*"]
+      "@_types/*": ["types/*"],
+      "@hooks": ["components/hooks"],
+      "@hooks/*": ["components/hooks/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
