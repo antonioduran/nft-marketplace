@@ -1,11 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import Link from 'next/link'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import ActiveLink from '../link'
-import { useWeb3 } from '@providers/web3'
-import { useAccount } from '@hooks/web3'
+import { useAccount, useNetwork } from '@hooks/web3'
 import Walletbar from './Walletbar'
 
 const navigation = [
@@ -19,6 +16,10 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   const {account} = useAccount();
+  const {network} = useNetwork();
+
+  console.log(network.data);
+  
  
   return (
     <Disclosure as="nav" className="bg-gray-800">
