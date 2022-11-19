@@ -1,4 +1,3 @@
-
 import { setupHooks, Web3Hooks } from "@hooks/web3/setupHooks";
 import { MetaMaskInpageProvider } from "@metamask/providers";
 import { Web3Dependencies } from "@_types/hooks";
